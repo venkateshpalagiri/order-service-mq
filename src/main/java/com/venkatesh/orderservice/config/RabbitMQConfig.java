@@ -16,7 +16,7 @@ public class RabbitMQConfig {
     private String orderQueue;
     @Value("${rabbitmq.exchange.name}")
     private String exchange;
-    @Value("{rabbitmq.binding.routing.key}")
+    @Value("${rabbitmq.binding.routing.key}")
     private String orderRoutingKey;
 
     // spring bean for queue - order queue
